@@ -1,9 +1,9 @@
-﻿using BenchmarkAndSpanExample.Linq;
+﻿using LinqBenchmarkExample.Linq;
 using BenchmarkDotNet.Running;
 using System;
 using System.Diagnostics;
 
-namespace BenchmarkAndSpanExample
+namespace LinqBenchmarkExample
 {
     public class Program
     {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-namespace BenchmarkAndSpanExample.Linq
+namespace LinqBenchmarkExample.Linq
 {
     [RankColumn]
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]

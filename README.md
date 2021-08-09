@@ -30,6 +30,17 @@ A basic benchmarks for Linq
 | EnumerableToList |      1000 | 12,179.8 ns | 1,343.24 ns |  73.6278 ns |  1.09 |    0.02 |    3 |      7.7515 |           - |           - |             24440 B |
 |       ListToList |      1000 | 15,223.2 ns | 2,364.99 ns | 129.6332 ns |  1.36 |    0.01 |    4 |     10.4218 |           - |           - |             32832 B |
 
+
+                            Method | arraySize |         Mean |       Error |      StdDev |  Ratio | RatioSD | Rank | Gen 0/1k Op | Gen 1/1k Op | Gen 2/1k Op | Allocated Memory/Op |
+---------------------------------- |---------- |-------------:|------------:|------------:|-------:|--------:|-----:|------------:|------------:|------------:|--------------------:|
+              FirstOrDefaultSearch |      1000 |     60.29 ns |    55.27 ns |   3.0294 ns |   1.00 |    0.00 |    1 |      0.0203 |           - |           - |                64 B |
+                         AnySearch |      1000 |    101.58 ns |    11.18 ns |   0.6129 ns |   1.69 |    0.07 |    2 |      0.0304 |           - |           - |                96 B |
+ NewEnumerableFirstOrDefaultSearch |      1000 |    166.24 ns |    37.98 ns |   2.0818 ns |   2.76 |    0.17 |    3 |      0.0355 |           - |           - |               112 B |
+            NewEnumerableAnySearch |      1000 |    258.91 ns |    37.73 ns |   2.0681 ns |   4.30 |    0.18 |    4 |      0.0710 |           - |           - |               224 B |
+                NewListExistSearch |      1000 | 17,334.25 ns | 7,903.87 ns | 433.2380 ns | 288.11 |   18.59 |    5 |     12.7563 |           - |           - |             40152 B |
+
+
+
 ## Conclusion
 - 	Sometimes things don’t work as expected
 - 	For performance, manual implementation is the best choice (Risk of compromising readability)

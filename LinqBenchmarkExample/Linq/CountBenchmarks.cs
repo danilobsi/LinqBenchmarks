@@ -3,7 +3,7 @@ using BenchmarkDotNet.Engines;
 using BenchmarkDotNet.Order;
 using System.Linq;
 
-namespace BenchmarkAndSpanExample.Linq
+namespace LinqBenchmarkExample.Linq
 {
     [RankColumn]
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]

@@ -1,4 +1,4 @@
-﻿namespace BenchmarkAndSpanExample
+﻿namespace LinqBenchmarkExample
 {
     public class Sample
     {
